@@ -9,9 +9,9 @@ module XCTestRunner
       @configuration = configuration
     end
 
-    def run(specifier)
+    def run(target, specifier)
       system('xcodebuild', 'test',
-             '-scheme', configuration.scheme,
+             '-scheme', target.scheme,
              '-destination', configuration.destination,
              '-only-testing', specifier)
     end
