@@ -16,7 +16,7 @@ module XCTestRunner
       @scheme = scheme
     end
 
-    def identifier_for_test_named(name)
+    def identifier_for_suite_named(name)
       "#{tests_module_name}.#{name}"
     end
   end
