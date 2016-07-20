@@ -1,4 +1,4 @@
-module Xctestrunner
+module XCTestRunner
   class Runner
     # @return [Configuration] The project configuration that we should run
     #                         tests for.

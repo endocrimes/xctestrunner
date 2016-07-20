@@ -1,6 +1,6 @@
-require 'Xctestrunner'
+require 'spec_helper'
 
-module Xctestrunner
+module XCTestRunner
   describe Runner do
     describe 'in general' do
       before do

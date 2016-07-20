@@ -5,7 +5,7 @@ require 'xctestrunner/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'xctestrunner'
-  spec.version       = Xctestrunner::VERSION
+  spec.version       = XCTestRunner::VERSION
   spec.authors       = ['Danielle Tomlinson']
   spec.email         = ['dan@tomlinson.io']
 

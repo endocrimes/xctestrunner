@@ -1,6 +1,6 @@
 require "xctestrunner/version"
 
-module Xctestrunner
+module XCTestRunner
   autoload :Runner, 'xctestrunner/runner'
   autoload :Configuration, 'xctestrunner/configuration'
 end
