@@ -1,7 +1,8 @@
 require "xctestrunner/version"
 
 module XCTestRunner
-  autoload :Runner, 'xctestrunner/runner'
-  autoload :Configuration, 'xctestrunner/configuration'
-  autoload :Target, 'xctestrunner/target'
+  require 'xctestrunner/configuration'
+  require 'xctestrunner/target'
+  require 'xctestrunner/watcher'
+  require 'xctestrunner/driver'
 end

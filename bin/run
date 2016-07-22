@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+ 
+require "bundler/setup"
+require "xctestrunner"
+
+
+Dir.chdir('/Users/dan/Development/Playground/circleci-kata/swift')
+
+target = XCTestRunner::Target.new('koans', 'Sources', 'koansTestsSuite', 'Tests')
+config = XCTestRunner::Configuration.new
+config.targets = [target]
+driver = XCTestRunner::Driver::SwiftPackageManager.new config
+
+watcher = XCTestRunner::Watcher.new driver, target
+
+puts "watching: #{Dir.pwd}"
+
+watcher.watch!
